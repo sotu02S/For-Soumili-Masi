@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Blossoms for Soumili Masi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@300;400;500&family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Song Popup -->
+    <div class="popup-overlay" id="songPopup">
+        <div class="popup-card">
+            <div class="popup-icon">🎵</div>
+            <h2>Do you want to play a song?</h2>
+            <p>Enjoy some soothing spring music while you browse!</p>
+            <div class="popup-buttons">
+                <button class="popup-btn popup-yes" id="popupYes">Yes, Play!</button>
+                <button class="popup-btn popup-no" id="popupNo">No, Thanks</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Audio -->
+    <audio id="bgMusic" loop>
+        <source src="Lamia Khan - Boshonto eshe geche _ বসন্ত এসে গেছে _ DANCE [JPcpeGJrzSk].mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Petals Background -->
+    <div class="petals-container" id="petalsContainer"></div>
+
+    <header>
+        <div class="header-content">
+            <span class="greeting-label fade-in">~ A Special Page For ~</span>
+            <h1 class="title-animate">Happy Spring, Soumili Masi!</h1>
+            <p class="subtitle fade-in-up">Wishing you a season filled with warmth, beautiful blooms, and wonderful memories.</p>
+            <div class="scroll-indicator fade-in-up-delay">
+                <span>Scroll Down</span>
+                <div class="scroll-arrow"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Quote Section -->
+        <section class="quote-section reveal">
+            <div class="quote-card">
+                <span class="quote-icon">🌷</span>
+                <blockquote>
+                    "Spring adds new life and new beauty to all that is."
+                </blockquote>
+                <cite>— Jessica Harrelson</cite>
+            </div>
+        </section>
+
+        <section class="slider-container reveal">
+            <h2 class="section-title">Spring in Full Bloom</h2>
+            <div class="slider-wrapper">
+                <div class="slider-track" id="sliderTrack">
+                    <img src="solo better dress.jpeg" alt="Traditional" class="slide">
+                    <img src="sunglass.jpeg" alt="Chill" class="slide">
+                    <img src="with saheb.jpeg" alt="Sibling" class="slide">
+                    <img src="solo kali puja.jpeg" alt="Casual" class="slide">
+                </div>
+            </div>
+            <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
+            <div class="slider-dots" id="sliderDots"></div>
+        </section>
+
+        <!-- Wish Cards Section -->
+        <section class="wishes-section reveal">
+            <h2 class="section-title">Spring Wishes For You</h2>
+            <div class="wishes-grid">
+                <div class="wish-card" style="--delay: 0s">
+                    <div class="wish-icon">🌸</div>
+                    <h3>Joy & Laughter</h3>
+                    <p>May every day bring you moments that make your heart smile.</p>
+                </div>
+                <div class="wish-card" style="--delay: 0.15s">
+                    <div class="wish-icon">🌻</div>
+                    <h3>New Beginnings</h3>
+                    <p>May this spring bring fresh opportunities and exciting adventures.</p>
+                </div>
+                <div class="wish-card" style="--delay: 0.3s">
+                    <div class="wish-icon">🦋</div>
+                    <h3>Peace & Serenity</h3>
+                    <p>May you find calm in the breeze and beauty in every blossom.</p>
+                </div>
+                <div class="wish-card" style="--delay: 0.45s">
+                    <div class="wish-icon">🌈</div>
+                    <h3>Love & Warmth</h3>
+                    <p>May you be surrounded by people who cherish you always.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery reveal">
+            <h2 class="section-title">More Beautiful Moments</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="Siblings.jpeg" alt="Memory 1">
+                    <div class="gallery-overlay"><span>Brothers</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="me.jpeg" alt="Memory 2">
+                    <div class="gallery-overlay"><span>Cousin</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="Heba mama.jpeg" alt="Memory 3">
+                    <div class="gallery-overlay"><span>Bro</span></div>
+                </div>
+                <div class="gallery-item">
+                    <img src="friends.jpeg" alt="Memory 4">
+                    <div class="gallery-overlay"><span>Holi</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Poem Section -->
+        <section class="poem-section reveal">
+            <div class="poem-card">
+                <h2 class="section-title">A Little Spring Poem</h2>
+                <div class="poem-text">
+                    <p>The flowers bloom, the birds all sing,</p>
+                    <p>A gentle breeze, the joy of spring.</p>
+                    <p>For you, dear Masi, the sun shines bright,</p>
+                    <p>Filling your world with love and light. 🌷</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-flowers">🌸 🌼 🌺 🌷 🌸</div>
+            <p>Made with love for Soumili Masi</p>
+            <span class="footer-year">Spring 2026</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
